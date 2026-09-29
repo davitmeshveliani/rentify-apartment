@@ -1,0 +1,1769 @@
+[2026-09-15 15:19:45,745] WARNING django.request Not Found: /favicon.ico
+[2026-09-17 18:07:19,114] WARNING django.request Not Found: /favicon.ico
+[2026-09-18 00:15:23,614] WARNING django.request Not Found: /favicon.ico
+[2026-09-18 17:48:03,764] WARNING django.request Not Found: /favicon.ico
+[2026-09-18 19:05:37,687] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1098, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1201, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'main_image' was declared on serializer ApartmentSerializer, but has not been included in the 'fields' option.
+[2026-09-18 19:05:37,771] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1098, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1201, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'main_image' was declared on serializer ApartmentSerializer, but has not been included in the 'fields' option.
+[2026-09-18 19:06:11,449] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1098, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1201, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'main_image' was declared on serializer ApartmentSerializer, but has not been included in the 'fields' option.
+[2026-09-18 19:06:11,490] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1098, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1201, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'main_image' was declared on serializer ApartmentSerializer, but has not been included in the 'fields' option.
+[2026-09-18 19:06:12,868] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1098, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1201, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'main_image' was declared on serializer ApartmentSerializer, but has not been included in the 'fields' option.
+[2026-09-18 19:06:12,909] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1098, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1201, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'main_image' was declared on serializer ApartmentSerializer, but has not been included in the 'fields' option.
+[2026-09-18 20:48:28,386] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 20:48:28,417] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 20:50:22,780] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 20:50:22,803] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 20:50:27,762] WARNING django.request Not Found: /listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-18 20:50:27,779] WARNING django.request Not Found: /listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-18 20:50:30,862] WARNING django.request Not Found: /listings/6d026ec1-4255-4049-a715-e377fe39af06/
+[2026-09-18 20:50:30,886] WARNING django.request Not Found: /listings/6d026ec1-4255-4049-a715-e377fe39af06/
+[2026-09-18 20:51:12,869] WARNING django.request Not Found: /listings/4a3d033e-4ead-4b0c-8d55-3b4ab2ccb86b/
+[2026-09-18 20:51:12,892] WARNING django.request Not Found: /listings/4a3d033e-4ead-4b0c-8d55-3b4ab2ccb86b/
+[2026-09-18 21:43:07,753] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:43:07,789] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:43:47,380] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:43:47,409] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:43:54,825] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:43:54,849] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:52:10,922] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:52:10,940] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:52:22,578] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:52:22,599] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:52:39,049] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:52:39,081] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:52:40,518] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:52:40,537] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:52:43,051] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:52:43,068] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:53:02,148] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:53:02,167] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:53:03,618] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:53:03,640] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:53:06,016] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:53:06,039] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:53:07,770] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:53:07,789] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 21:55:20,999] ERROR django.request Server Error (500): /api/listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 691, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'iews_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 286, in get
+    return self.retrieve(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\listings\controllers\listing_controller.py", line 132, in retrieve
+    Apartment.objects.filter(pk=listing.pk).update(iews_count=F("views_count") + 1)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\query.py", line 1372, in update
+    query.add_update_values(kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\sql\subqueries.py", line 89, in add_update_values
+    field = self.get_meta().get_field(name)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 693, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Apartment has no field named 'iews_count'
+[2026-09-18 21:55:21,078] ERROR django.request Server Error (500): /api/listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 691, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'iews_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 286, in get
+    return self.retrieve(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\listings\controllers\listing_controller.py", line 132, in retrieve
+    Apartment.objects.filter(pk=listing.pk).update(iews_count=F("views_count") + 1)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\query.py", line 1372, in update
+    query.add_update_values(kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\sql\subqueries.py", line 89, in add_update_values
+    field = self.get_meta().get_field(name)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 693, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Apartment has no field named 'iews_count'
+[2026-09-18 21:55:25,079] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:55:25,100] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:55:28,864] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:55:28,908] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:55:29,922] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:55:29,953] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:00,882] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:00,904] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:02,941] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:02,977] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:03,959] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:03,989] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:04,744] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:04,767] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:05,495] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:05,534] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:06,274] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:56:06,303] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:57:40,975] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:57:41,011] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:57:43,883] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:57:43,916] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:57:44,754] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:57:44,782] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:57:49,940] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 21:57:49,975] WARNING django.request Not Found: /api/api/listings/
+[2026-09-18 22:29:05,685] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 22:29:05,704] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 22:32:25,209] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 22:32:25,230] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 22:34:39,607] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 22:34:39,624] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 22:43:04,098] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 22:43:04,113] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 22:58:32,058] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 22:58:32,073] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 23:03:06,614] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 23:03:06,642] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 23:03:15,722] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 23:03:15,747] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 23:03:19,722] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 23:03:19,747] WARNING django.request Not Found: /listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+[2026-09-18 23:04:21,468] ERROR django.request Server Error (500): /api/listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 691, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'iews_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 286, in get
+    return self.retrieve(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\listings\controllers\listing_controller.py", line 132, in retrieve
+    Apartment.objects.filter(pk=listing.pk).update(iews_count=F("views_count") + 1)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\query.py", line 1372, in update
+    query.add_update_values(kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\sql\subqueries.py", line 89, in add_update_values
+    field = self.get_meta().get_field(name)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 693, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Apartment has no field named 'iews_count'
+[2026-09-18 23:04:21,530] ERROR django.request Server Error (500): /api/listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 691, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'iews_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 286, in get
+    return self.retrieve(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\listings\controllers\listing_controller.py", line 132, in retrieve
+    Apartment.objects.filter(pk=listing.pk).update(iews_count=F("views_count") + 1)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\query.py", line 1372, in update
+    query.add_update_values(kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\sql\subqueries.py", line 89, in add_update_values
+    field = self.get_meta().get_field(name)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 693, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Apartment has no field named 'iews_count'
+[2026-09-18 23:04:25,149] ERROR django.request Server Error (500): /api/listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 691, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'iews_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 286, in get
+    return self.retrieve(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\listings\controllers\listing_controller.py", line 132, in retrieve
+    Apartment.objects.filter(pk=listing.pk).update(iews_count=F("views_count") + 1)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\query.py", line 1372, in update
+    query.add_update_values(kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\sql\subqueries.py", line 89, in add_update_values
+    field = self.get_meta().get_field(name)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 693, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Apartment has no field named 'iews_count'
+[2026-09-18 23:04:25,188] ERROR django.request Server Error (500): /api/listings/4027e762-4a0c-4c90-98e1-3787a2d037fe/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 691, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'iews_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 286, in get
+    return self.retrieve(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\listings\controllers\listing_controller.py", line 132, in retrieve
+    Apartment.objects.filter(pk=listing.pk).update(iews_count=F("views_count") + 1)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\query.py", line 1372, in update
+    query.add_update_values(kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\sql\subqueries.py", line 89, in add_update_values
+    field = self.get_meta().get_field(name)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\options.py", line 693, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: Apartment has no field named 'iews_count'
+[2026-09-19 00:07:50,595] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:07:50,632] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:53,934] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:53,948] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:55,193] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:55,204] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:55,833] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:55,845] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:56,032] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:56,042] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:56,221] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:56,233] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:56,667] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:10:56,676] WARNING django.request Not Found: /api/listings/9b020891-f50d-42f0-9de3-2044e6ae14e9/
+[2026-09-19 00:48:09,537] WARNING django.request Not Found: /favicon.ico
+[2026-09-19 09:02:52,453] WARNING django.request Not Found: /favicon.ico
+[2026-09-19 10:23:23,092] WARNING django.request Not Found: /listings/
+[2026-09-19 10:23:23,120] WARNING django.request Not Found: /listings/
+[2026-09-19 10:23:54,212] WARNING django.request Not Found: /listings/
+[2026-09-19 10:23:54,223] WARNING django.request Not Found: /listings/
+[2026-09-20 00:07:51,745] WARNING django.request Not Found: /favicon.ico
+[2026-09-20 00:56:32,734] WARNING django.request Not Found: /users/register/
+[2026-09-20 01:02:27,655] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:06,091] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:07,992] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:08,519] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:08,736] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:08,933] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:09,115] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:09,283] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:09,448] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:09,607] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:09,772] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:09,959] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:10,144] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:10,303] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:10,504] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:10,968] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:11,273] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:12,310] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:12,996] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:13,697] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:14,290] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:14,987] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:15,961] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:16,871] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:18,174] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:18,992] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:19,667] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:23,142] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:24,091] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:24,356] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:24,617] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:13:24,858] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:23:38,411] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 01:27:31,141] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 21:13:21,127] WARNING django.request Not Found: /api/listings/create/
+[2026-09-20 21:13:21,148] WARNING django.request Not Found: /api/listings/create/
+[2026-09-20 21:13:30,067] WARNING django.request Not Found: /api/listings/create/
+[2026-09-20 21:13:30,097] WARNING django.request Not Found: /api/listings/create/
+[2026-09-20 21:15:06,217] WARNING django.request Not Found: /api/listings/create/
+[2026-09-20 21:15:06,249] WARNING django.request Not Found: /api/listings/create/
+[2026-09-20 21:29:23,986] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 21:32:22,268] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 21:32:23,495] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 21:38:49,482] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 21:40:59,216] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 21:41:00,349] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:18:13,781] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:28:37,905] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:34:48,684] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 22:35:49,348] WARNING django.request Bad Request: /api/users/register/
+[2026-09-20 22:36:05,682] WARNING django.request Unauthorized: /api/users/login/
+[2026-09-20 22:45:01,407] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:45:01,416] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:45:12,674] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:45:12,690] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:45:54,417] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:45:54,427] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:01,477] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:01,491] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:05,377] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:05,392] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:10,939] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:10,951] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:22,613] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:22,618] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:26,217] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:26,227] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:27,043] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:27,053] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:27,571] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:27,577] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:30,806] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:46:30,821] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:43,265] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:43,270] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:44,303] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:44,309] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:44,829] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:44,836] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:45,156] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:45,160] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:45,485] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:45,490] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:45,780] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:54:45,786] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:56:36,480] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:56:36,493] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:56:41,276] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:56:41,283] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:57:08,189] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:57:08,200] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:57:12,966] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:57:12,975] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 22:59:04,430] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:01:00,074] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:01:01,502] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:01:02,367] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:01:02,895] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:01:03,104] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:01:03,233] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:01:03,425] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:01:43,455] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:07:08,232] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:07:09,625] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:07:10,302] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:07:10,819] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:07:11,018] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:07:11,200] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:07:11,381] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:07:57,095] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:13:26,324] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:13:31,829] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:15:44,161] WARNING django.request Not Found: /favicon.ico
+[2026-09-20 23:15:49,661] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-20 23:16:09,709] WARNING django.request Not Found: /favicon.ico
+[2026-09-20 23:20:07,904] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-20 23:20:16,101] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-20 23:20:49,025] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:20:54,903] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-20 23:21:53,695] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:21:59,785] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-20 23:23:45,641] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:23:46,822] WARNING django.request Unauthorized: /api/listings/
+[2026-09-20 23:31:00,186] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 00:10:25,008] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 00:12:04,444] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 00:13:34,627] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 00:14:01,095] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 00:16:48,904] WARNING django.request Unauthorized: /api/users/login/
+[2026-09-21 00:21:07,514] WARNING django.request Method Not Allowed: /api/users/login/
+[2026-09-21 00:25:10,625] WARNING django.request Forbidden: /api/listings/
+[2026-09-21 00:25:27,065] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 00:25:30,318] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 00:34:08,897] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\deprecation.py", line 440, in __call__
+    response = self.process_request(request)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\http\request.py", line 210, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+[2026-09-21 00:34:55,642] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\deprecation.py", line 440, in __call__
+    response = self.process_request(request)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\http\request.py", line 210, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+[2026-09-21 00:41:02,339] WARNING django.request Forbidden: /api/listings/
+[2026-09-21 00:42:56,955] WARNING django.request Forbidden: /api/users/register/
+[2026-09-21 00:46:51,437] WARNING django.request Forbidden: /api/users/register/
+[2026-09-21 00:46:53,078] WARNING django.request Forbidden: /api/users/register/
+[2026-09-21 00:46:53,717] WARNING django.request Forbidden: /api/users/register/
+[2026-09-21 00:48:39,866] WARNING django.request Bad Request: /api/users/register/
+[2026-09-21 00:49:14,952] WARNING django.request Bad Request: /api/users/register/
+[2026-09-21 01:00:07,876] WARNING django.request Forbidden: /api/listings/
+[2026-09-21 01:26:32,688] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 01:28:06,651] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 01:28:14,709] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 01:33:04,241] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 01:33:06,714] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 01:33:07,626] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:41:25,391] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 12:45:29,335] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:46:41,139] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:46:44,130] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:46:45,316] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:46:46,385] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:46:47,220] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:46:48,164] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:46:48,935] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:46:49,822] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:47:29,346] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:47:56,278] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:48:54,273] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:53:39,934] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:53:42,476] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:53:48,089] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:53:56,677] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:53:57,392] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:53:57,840] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:53:58,074] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:54:17,475] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:54:18,169] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:54:18,649] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:54:30,875] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 12:58:16,506] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:00:01,286] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:00:02,420] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:00:02,888] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:00:03,102] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:00:03,303] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:00:03,509] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:00:03,941] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:10:46,713] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:11:38,551] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:11:51,484] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:13:05,482] WARNING django.request Unauthorized: /api/users/login/
+[2026-09-21 13:14:30,172] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:16:45,278] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:16:55,271] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:17:11,343] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:21:17,841] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-21 13:23:34,978] WARNING django.request Bad Request: /api/users/become-host/
+[2026-09-21 13:25:45,739] WARNING django.request Bad Request: /api/users/become-host/
+[2026-09-21 13:39:10,411] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 13:40:00,828] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 13:40:19,815] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 13:40:56,010] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 13:50:37,422] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 13:53:51,482] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 14:08:25,627] WARNING django.request Unsupported Media Type: /api/listings/images/upload/
+[2026-09-21 14:09:07,537] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:13:11,011] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:13:14,705] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:13:15,544] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:13:16,416] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:14:59,052] WARNING django.request Unsupported Media Type: /api/listings/images/upload/
+[2026-09-21 14:20:10,490] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:11,535] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:11,738] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:11,943] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:12,120] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:12,297] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:12,460] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:13,060] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:13,332] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:13,558] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:13,933] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:14,155] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:30,616] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:20:31,429] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:21:32,817] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:29,453] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:30,384] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:30,603] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:30,818] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:30,961] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:31,139] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:31,281] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:31,450] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:31,619] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:31,988] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:32,362] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:32,600] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:24:32,849] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:26:08,743] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 14:30:44,458] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:31:27,938] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 14:34:04,246] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 14:34:05,166] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 14:34:05,386] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 14:34:05,572] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 14:34:05,730] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 14:34:05,908] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 14:34:06,058] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 14:34:06,198] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 14:34:06,406] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 14:34:40,326] WARNING django.request Unauthorized: /api/listings/
+[2026-09-21 14:37:21,755] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 14:37:49,656] WARNING django.request Method Not Allowed: /api/listings/images/upload/
+[2026-09-21 14:37:49,809] WARNING django.request Not Found: /favicon.ico
+[2026-09-21 14:41:09,255] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 14:49:46,608] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 15:03:56,797] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 15:04:34,656] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 15:04:36,145] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 15:04:36,821] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 15:04:37,220] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 15:07:04,204] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 15:07:33,649] WARNING django.request Bad Request: /api/listings/images/upload/
+[2026-09-21 15:25:32,904] WARNING django.request Unsupported Media Type: /api/listings/images/upload/
+[2026-09-21 16:13:19,238] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:13:19,270] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:13:24,490] WARNING django.request Unauthorized: /api/listings/images/2e2e54a4-cd90-42b7-b5aa-63fe74acb7d7/
+[2026-09-21 16:13:25,851] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:13:25,856] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:13:32,031] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:13:32,047] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:14:15,754] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:14:15,770] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:14:21,837] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:14:21,854] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:15:31,768] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:15:31,778] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:15:35,440] WARNING django.request Unauthorized: /api/listings/images/2e2e54a4-cd90-42b7-b5aa-63fe74acb7d7/
+[2026-09-21 16:15:37,944] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:15:37,959] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:17:59,130] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:17:59,150] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:18:06,428] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:18:06,434] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:18:23,332] WARNING django.request Unauthorized: /api/listings/images/upload/
+[2026-09-21 16:18:31,214] WARNING django.request Unauthorized: /api/listings/images/upload/
+[2026-09-21 16:18:31,914] WARNING django.request Unauthorized: /api/listings/images/upload/
+[2026-09-21 16:18:32,376] WARNING django.request Unauthorized: /api/listings/images/upload/
+[2026-09-21 16:18:39,328] WARNING django.request Unauthorized: /api/listings/images/upload/
+[2026-09-21 16:18:59,553] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:18:59,569] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 16:19:08,802] WARNING django.request Unauthorized: /api/listings/images/upload/
+[2026-09-21 16:38:19,914] WARNING django.request Not Found: /api/listings/images/8ceaa0f1-f0bb-44cd-9cec-ad22fe09e3ea/
+[2026-09-21 16:38:27,443] WARNING django.request Not Found: /api/listings/images/8ceaa0f1-f0bb-44cd-9cec-ad22fe09e3ea/
+[2026-09-21 16:38:59,764] WARNING django.request Not Found: /api/listings/images/3694ab5a-59ee-497e-a531-ae3425dbf0a4/
+[2026-09-21 16:39:03,289] WARNING django.request Not Found: /api/listings/images/3694ab5a-59ee-497e-a531-ae3425dbf0a4/
+[2026-09-21 16:39:05,915] WARNING django.request Not Found: /api/listings/images/8ceaa0f1-f0bb-44cd-9cec-ad22fe09e3ea/
+[2026-09-21 16:40:05,743] WARNING django.request Not Found: /api/listings/images/upload/
+[2026-09-21 16:40:14,677] WARNING django.request Not Found: /api/listings/images/upload/
+[2026-09-21 16:41:53,237] WARNING django.request Not Found: /api/listings/images/8dbe7742-5b5e-4a34-a92f-ed87b70bfdf6/
+[2026-09-21 16:42:05,105] WARNING django.request Not Found: /api/listings/images/upload/
+[2026-09-21 16:43:18,650] WARNING django.request Not Found: /api/listings/images/upload/
+[2026-09-21 16:44:27,912] WARNING django.request Not Found: /api/listings/images/b4b94cbd-6d56-435e-b5e8-24aa78ce4589/
+[2026-09-21 16:44:36,177] WARNING django.request Not Found: /api/listings/images/3532f70f-ca9e-4e62-8dc4-75eab7410642/
+[2026-09-21 17:43:50,993] WARNING django.request Not Found: /api/listings/images/9dbb9794-7992-41fe-bcec-41615dc48105/
+[2026-09-21 17:52:25,313] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:52:25,322] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:52:50,965] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:52:50,974] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:53:03,701] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:53:03,710] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:53:56,500] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:53:56,513] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:53:58,023] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:53:58,032] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:53:59,344] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:53:59,349] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:53:59,953] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:53:59,966] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:54:00,383] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:54:00,392] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:54:00,627] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:54:00,637] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:54:01,024] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:54:01,033] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:54:01,815] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:54:01,825] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:54:27,080] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:54:27,087] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:56:49,668] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:56:49,685] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:56:50,930] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:56:50,938] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:56:51,870] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:56:51,880] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:56:52,242] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:56:52,251] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 17:56:54,235] WARNING django.request Unauthorized: /api/listings/images/353744a1-aa5a-46ec-9fd2-c89533f843c1/
+[2026-09-21 17:57:00,573] WARNING django.request Unauthorized: /api/listings/images/upload/
+[2026-09-21 17:57:01,579] WARNING django.request Unauthorized: /api/listings/images/upload/
+[2026-09-21 17:59:57,634] WARNING django.request Bad Request: /api/listings/ea9286de-4b0d-403c-8538-663ffc354f60/
+[2026-09-21 18:00:05,392] WARNING django.request Bad Request: /api/listings/ea9286de-4b0d-403c-8538-663ffc354f60/
+[2026-09-21 18:13:10,096] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 18:13:33,375] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 18:17:00,509] WARNING django.request Bad Request: /api/listings/
+[2026-09-21 18:25:00,600] WARNING django.request Bad Request: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-21 19:06:59,234] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:07:30,346] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:15:31,349] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:17:07,946] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:28:49,540] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:29:52,948] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:30:35,382] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:32:58,255] ERROR django.request Server Error (500): /api/reservations/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\controllers\reservation_controllers.py", line 62, in create
+    Apartment.objects.select_for_update().get(pk=listing_id)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\query.py", line 683, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+apps.listings.models.apartment.Apartment.DoesNotExist: Apartment matching query does not exist.
+[2026-09-21 19:33:06,498] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:33:13,925] ERROR django.request Server Error (500): /api/reservations/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\controllers\reservation_controllers.py", line 62, in create
+    Apartment.objects.select_for_update().get(pk=listing_id)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\query.py", line 683, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+apps.listings.models.apartment.Apartment.DoesNotExist: Apartment matching query does not exist.
+[2026-09-21 19:33:21,149] ERROR django.request Server Error (500): /api/reservations/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\controllers\reservation_controllers.py", line 62, in create
+    Apartment.objects.select_for_update().get(pk=listing_id)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\query.py", line 683, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+apps.listings.models.apartment.Apartment.DoesNotExist: Apartment matching query does not exist.
+[2026-09-21 19:34:43,783] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:34:47,655] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:34:50,783] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:43:18,270] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:44:41,779] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:44:53,364] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:47:30,769] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:48:31,918] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:48:48,010] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 19:49:32,308] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:49:48,626] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:49:48,867] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:49:48,907] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:49:48,928] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:49:53,438] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:51:00,213] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:51:00,246] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:51:01,567] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-21 19:58:44,252] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 20:06:31,962] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 20:07:08,968] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 20:08:37,455] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 20:09:00,299] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 20:09:02,889] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 20:09:08,831] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 20:09:48,153] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 20:09:50,758] WARNING django.request Bad Request: /api/reservations/
+[2026-09-21 21:57:38,312] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 21:57:38,323] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 21:57:49,267] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 21:57:49,280] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 21:58:14,724] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 21:58:14,732] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-21 23:47:34,347] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-21 23:47:34,359] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-22 00:04:02,555] WARNING django.request Unauthorized: /api/reviews/
+[2026-09-22 00:24:11,931] WARNING django.request Bad Request: /api/reviews/
+[2026-09-22 00:26:51,077] WARNING django.request Bad Request: /api/reviews/
+[2026-09-22 00:27:53,547] WARNING django.request Bad Request: /api/reviews/
+[2026-09-22 00:30:13,332] WARNING django.request Bad Request: /api/reviews/
+[2026-09-22 00:41:41,590] WARNING django.request Bad Request: /api/reviews/
+[2026-09-22 00:45:06,110] WARNING django.request Bad Request: /api/reservations/
+[2026-09-22 00:45:09,146] WARNING django.request Bad Request: /api/reviews/
+[2026-09-22 00:48:20,272] WARNING django.request Bad Request: /api/reservations/
+[2026-09-22 01:18:37,784] ERROR django.request Server Error (500): /api/reservations/55ce51ed-34fd-45d6-8512-c79f0bab2494/cancel/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\controllers\reservation_controllers.py", line 168, in post
+    if not service.cancel_reservation(reservation, request.user):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\services\reservation_service.py", line 29, in cancel_reservation
+    self.repository.cancel_reservation(reservation)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\repositories\reservation_repository.py", line 26, in cancel_reservation
+    return self.update_status(reservation,Reservation.StatusChoice.CANCELLED,)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\repositories\reservation_repository.py", line 21, in update_status
+    reservation.full_clean()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\base.py", line 1745, in full_clean
+    raise ValidationError(errors)
+django.core.exceptions.ValidationError: {'start_date': ['Check-in time must be 12:00.']}
+[2026-09-22 01:18:40,543] ERROR django.request Server Error (500): /api/reservations/8866b426-c3b2-4892-b3c3-5ab3edbd1965/cancel/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\controllers\reservation_controllers.py", line 168, in post
+    if not service.cancel_reservation(reservation, request.user):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\services\reservation_service.py", line 29, in cancel_reservation
+    self.repository.cancel_reservation(reservation)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\repositories\reservation_repository.py", line 26, in cancel_reservation
+    return self.update_status(reservation,Reservation.StatusChoice.CANCELLED,)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\repositories\reservation_repository.py", line 21, in update_status
+    reservation.full_clean()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\base.py", line 1745, in full_clean
+    raise ValidationError(errors)
+django.core.exceptions.ValidationError: {'start_date': ['Check-in time must be 12:00.']}
+[2026-09-22 01:18:42,500] ERROR django.request Server Error (500): /api/reservations/c2486f61-96a3-4191-9ff6-5246be6dbb8b/cancel/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\controllers\reservation_controllers.py", line 168, in post
+    if not service.cancel_reservation(reservation, request.user):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\services\reservation_service.py", line 29, in cancel_reservation
+    self.repository.cancel_reservation(reservation)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\repositories\reservation_repository.py", line 26, in cancel_reservation
+    return self.update_status(reservation,Reservation.StatusChoice.CANCELLED,)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\apps\reservations\repositories\reservation_repository.py", line 21, in update_status
+    reservation.full_clean()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\db\models\base.py", line 1745, in full_clean
+    raise ValidationError(errors)
+django.core.exceptions.ValidationError: {'start_date': ['Check-in time must be 12:00.']}
+[2026-09-22 09:05:05,927] WARNING django.request Bad Request: /api/reviews/
+[2026-09-22 09:12:15,136] WARNING django.request Bad Request: /api/reviews/
+[2026-09-22 09:13:04,101] WARNING django.request Bad Request: /api/reviews/
+[2026-09-22 09:15:13,072] WARNING django.request Not Found: /favicon.ico
+[2026-09-22 09:40:54,343] WARNING django.request Bad Request: /api/reservations/
+[2026-09-22 09:57:45,037] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 09:57:45,043] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 09:58:46,333] WARNING django.request Unauthorized: /api/reservations/
+[2026-09-22 09:59:02,453] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-22 09:59:02,466] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-22 09:59:02,472] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-22 09:59:02,487] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-22 09:59:11,647] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 09:59:11,657] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 09:59:32,422] WARNING django.request Unauthorized: /api/reservations/
+[2026-09-22 09:59:53,566] WARNING django.request Unauthorized: /api/reservations/
+[2026-09-22 11:03:25,243] WARNING django.request Not Found: /favicon.ico
+[2026-09-22 11:34:16,950] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:34:16,964] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:34:29,087] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:34:29,106] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:34:43,856] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:34:43,870] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:35:04,653] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:35:04,695] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:35:09,399] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:35:09,408] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:35:13,444] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:35:13,451] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:35:24,183] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:35:24,197] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:45:41,453] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:45:41,465] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:45:47,367] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:45:47,380] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:45:51,824] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:45:51,836] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:45:55,714] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:45:55,729] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:00,301] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:00,317] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:11,977] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:11,993] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:15,171] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:15,182] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:18,533] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:18,554] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:22,019] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:22,033] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:36,611] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:36,626] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:51,387] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:51,400] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:55,304] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:55,314] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:58,443] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:46:58,456] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:47:05,673] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:47:05,686] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:48:08,681] WARNING django.request Not Found: /favicon.ico
+[2026-09-22 11:48:54,463] WARNING django.request Not Found: /api/listings/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/
+[2026-09-22 11:48:54,465] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:48:54,470] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:48:54,489] WARNING django.request Not Found: /api/listings/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/
+[2026-09-22 11:51:13,027] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:51:13,034] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:52:12,404] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:52:12,411] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:57:12,953] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-22 11:57:52,260] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-22 11:57:58,009] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-22 11:59:21,846] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 11:59:21,856] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 15:50:25,752] WARNING django.request Not Found: /favicon.ico
+[2026-09-22 16:12:36,560] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 16:12:36,571] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 17:32:52,846] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 17:32:52,855] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 17:33:05,126] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 17:33:05,137] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 17:34:00,028] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 17:34:00,035] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 17:34:45,228] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-22 17:34:45,238] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-22 17:34:45,241] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-22 17:34:45,251] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-22 18:57:39,122] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 18:57:39,128] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 18:57:43,104] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 18:57:43,115] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 18:57:58,454] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 18:57:58,467] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 18:58:03,581] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 18:58:03,588] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:22:08,449] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:22:08,459] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:27:59,996] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-22 19:28:00,009] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-22 19:28:00,018] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-22 19:28:00,031] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-22 19:28:03,128] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:28:03,137] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:28:25,835] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:28:25,846] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:28:31,681] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:28:31,688] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:28:40,313] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-22 19:28:40,323] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-22 19:28:40,330] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-22 19:28:40,333] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-22 19:41:45,482] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:41:45,496] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:48:16,229] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:48:16,245] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:49:04,496] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:49:04,512] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:52:04,961] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:52:04,976] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:52:25,074] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:52:25,081] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:54:28,161] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:54:28,179] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 19:55:39,228] WARNING django.request Bad Request: /api/reviews/
+[2026-09-22 21:12:51,125] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 21:12:51,137] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 21:12:55,459] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 21:12:55,469] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 21:13:55,783] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 21:13:55,806] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 21:14:55,590] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-22 21:14:55,602] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:08:33,640] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:08:33,651] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:08:40,210] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:08:40,214] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:08:51,827] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:08:51,834] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:08:56,736] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:08:56,751] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:08:59,866] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:08:59,874] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:09:29,165] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:09:29,173] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 10:11:15,274] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-23 10:11:15,276] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-23 10:11:15,293] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-23 10:11:15,298] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-23 11:57:53,819] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 11:58:11,753] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 11:58:39,593] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 11:59:43,405] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:00:58,915] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:01:38,611] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:07:35,616] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:07:48,488] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:11:08,397] WARNING django.request Forbidden: /api/listings/images/02c2ee55-0d27-4bad-8af7-2df3b02b2330/
+[2026-09-23 12:11:13,882] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:11:39,900] WARNING django.request Forbidden: /api/listings/images/upload/
+[2026-09-23 12:13:48,464] WARNING django.request Forbidden: /api/listings/images/upload/
+[2026-09-23 12:13:56,668] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:17:31,705] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:22:51,350] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:24:18,736] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:24:34,306] WARNING django.request Forbidden: /api/listings/1d66b5e8-1410-4ccb-acfa-a335884ad3b5/
+[2026-09-23 12:49:25,714] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\deprecation.py", line 440, in __call__
+    response = self.process_request(request)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\http\request.py", line 210, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+[2026-09-23 12:50:06,402] WARNING django.request Unauthorized: /api/users/login/
+[2026-09-23 17:36:33,549] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 17:36:33,557] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-23 17:36:58,782] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-23 17:36:58,789] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-23 17:36:58,797] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-23 17:36:58,801] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-25 16:46:11,529] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-25 16:46:11,546] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-25 16:50:15,770] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-25 16:50:15,778] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-25 16:54:13,790] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-25 16:54:13,800] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-25 16:54:13,809] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-25 16:54:13,811] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-25 16:54:17,142] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-25 16:54:17,148] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-25 16:54:17,163] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-25 16:54:17,173] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-25 16:54:22,718] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-25 16:54:24,341] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-25 16:54:24,976] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-25 17:28:21,528] WARNING django.request Not Found: /favicon.ico
+[2026-09-25 18:29:08,344] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-25 18:29:08,354] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-25 18:34:33,358] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-25 19:17:53,228] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:17:53,276] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:17:57,828] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:17:57,884] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:18:48,892] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:18:48,970] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:18:50,076] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:18:50,123] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:18:50,974] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:18:51,010] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:18:53,236] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:18:53,289] ERROR django.request Server Error (500): /api/listings/
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\drf_spectacular\drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 806, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 725, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 535, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 396, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\rest_framework\serializers.py", line 1073, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ~~~~~~~^^^^^^^^^^^^^^
+AssertionError: Class ApartmentSerializer missing "Meta" attribute
+[2026-09-25 19:23:00,393] WARNING django.request Not Found: /favicon.ico
+[2026-09-25 19:36:10,230] WARNING django.request Bad Request: /api/listings/
+[2026-09-25 19:46:17,492] WARNING django.request Bad Request: /api/listings/
+[2026-09-25 19:46:20,352] WARNING django.request Bad Request: /api/listings/
+[2026-09-25 19:46:21,695] WARNING django.request Bad Request: /api/listings/
+[2026-09-25 19:52:13,147] WARNING django.request Bad Request: /api/listings/
+[2026-09-25 19:53:59,053] WARNING django.request Bad Request: /api/listings/
+[2026-09-25 20:01:30,263] WARNING django.request Bad Request: /api/reservations/
+[2026-09-25 20:05:18,303] WARNING django.request Bad Request: /api/reservations/
+[2026-09-25 20:05:19,466] WARNING django.request Bad Request: /api/reservations/
+[2026-09-25 23:14:32,641] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-25 23:14:32,653] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-25 23:14:32,660] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-25 23:14:32,663] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-26 00:37:33,125] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 00:37:33,132] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 00:38:32,933] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 00:38:32,944] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 00:49:14,025] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-26 00:49:14,055] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-26 00:49:14,069] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-26 00:49:14,081] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-26 08:43:02,426] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-26 08:43:02,427] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-26 08:43:02,451] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-26 08:43:02,458] WARNING django.request Unauthorized: /api/reservations/host/
+[2026-09-26 11:39:25,080] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 11:39:25,085] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 11:39:39,221] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 11:39:39,228] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 12:17:41,883] WARNING django.request Unauthorized: /api/users/become-host/
+[2026-09-26 18:18:23,788] WARNING django.request Bad Request: /api/reservations/
+[2026-09-26 18:29:50,650] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\utils\deprecation.py", line 440, in __call__
+    response = self.process_request(request)
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\dato\Desktop\my_Rentif_front_project\.venv\Lib\site-packages\django\http\request.py", line 210, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+[2026-09-26 20:06:39,859] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 20:06:39,864] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 20:06:39,876] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 20:06:39,889] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-26 20:06:39,894] WARNING django.request Unauthorized: /api/reviews/my/
+[2026-09-26 22:30:55,934] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 22:30:55,943] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 22:30:55,963] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-26 22:30:55,971] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-26 22:30:55,999] WARNING django.request Unauthorized: /api/reviews/my/
+[2026-09-27 17:25:52,598] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 17:25:52,607] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 17:25:52,621] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 17:25:52,636] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-27 17:25:52,669] WARNING django.request Unauthorized: /api/reviews/my/
+[2026-09-27 18:57:49,038] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 18:57:49,055] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 20:05:51,736] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 20:05:51,741] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 20:05:54,275] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 20:05:54,279] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 20:05:54,290] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 20:05:54,293] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-27 20:05:54,308] WARNING django.request Unauthorized: /api/reviews/my/
+[2026-09-27 20:42:48,139] WARNING django.request Bad Request: /api/reservations/
+[2026-09-27 20:44:43,508] WARNING django.request Bad Request: /api/reservations/
+[2026-09-27 21:12:46,652] WARNING django.request Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-27 23:24:03,659] WARNING django.request Not Found: /favicon.ico
+[2026-09-27 22:30:19,550] WARNING django.request Not Found: /favicon.ico
+[2026-09-27 22:48:56,704] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 22:48:56,746] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-27 22:48:56,748] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-27 22:48:56,757] WARNING django.request Unauthorized: /api/reviews/my/
+[2026-09-27 22:49:20,871] WARNING django.request Unauthorized: /api/users/login/
+[2026-09-27 22:49:24,565] WARNING django.request Unauthorized: /api/users/login/
+[2026-09-27 22:49:36,223] WARNING django.request Unauthorized: /api/users/login/
+[2026-09-27 22:50:47,767] WARNING django.request Bad Request: /api/users/register/
+[2026-09-29 14:27:17,359] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-29 14:27:17,415] WARNING django.request Unauthorized: /api/users/profile/
+[2026-09-29 14:27:17,418] WARNING django.request Unauthorized: /api/reservations/my/
+[2026-09-29 14:27:17,425] WARNING django.request Unauthorized: /api/reviews/my/
+[2026-09-29 14:29:13,599] WARNING django.request Unauthorized: /api/users/login/
+[2026-09-29 14:29:45,132] WARNING django.request Unauthorized: /api/users/login/
+[2026-09-29 14:29:54,946] WARNING django.request Unauthorized: /api/users/login/

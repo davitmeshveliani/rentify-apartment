@@ -1,0 +1,100 @@
+"""
+Custom User model definition for the core domain.
+Extends Django's AbstractUser with UUID primary key and domain-specific attributes.
+"""
+
+import uuid
+
+
+from django.contrib.auth.models import AbstractUser, UserManager
+from django.core.exceptions import ValidationError
+from django.db import models
+from django.utils import timezone
+
+from apps.users.choices.choices import GenderChoices
+from simple_history.models import HistoricalRecords
+
+class User(AbstractUser):
+    """
+    Custom User model extending Django's standard AbstractUser.
+    """
+
+    objects = UserManager()
+
+    id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False,)
+    email = models.EmailField(unique=True)
+    first_name = models.CharField(max_length=150,blank=True,null=True,)
+    last_name = models.CharField(max_length=150,blank=True,null=True,)
+    phone_number = models.CharField(max_length=20,blank=True,null=True,)
+    address = models.CharField(max_length=255,blank=True,null=True,)
+    birthday = models.DateField(blank=True,null=True,)
+    bio = models.TextField(blank=True,null=True,)
+
+    gender = models.CharField(max_length=10,choices=GenderChoices.choices,default=GenderChoices.MALE,)
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = ["username","first_name","last_name",]
+
+    history = HistoricalRecords()
+
+
+    class Meta:
+        db_table = "users"
+        app_label = "users"
+        ordering = ["-date_joined"]
+        verbose_name = "User"
+        verbose_name_plural = "Users"
+
+        constraints = [
+            models.CheckConstraint(
+                condition=models.Q(gender__in=GenderChoices.values),
+                                    name="user_valid_gender",),
+                                        ]
+
+    def clean(self) -> None:
+        super().clean()
+
+        # 1. Email normalization & case-insensitive uniqueness check
+        if self.email:
+            self.email = self.email.strip().lower()
+            qs = User.objects.filter(email__iexact=self.email)
+            pk = getattr(self, "pk", None)
+
+            if pk:
+                qs = qs.exclude(pk=pk)
+
+            if qs.exists():
+                raise ValidationError({"email": "A user with this email address already exists."})
+
+        # 2. Birthday validation
+        if self.birthday:
+            today = timezone.localdate()
+
+            # Birthday cannot be in the future.
+            if self.birthday > today:
+                raise ValidationError({"birthday": "Birthday cannot be in the future."})
+
+            # User must be at least 18 years old.
+
+            try:
+                min_age_date = self.birthday.replace(
+                    year=self.birthday.year + 18)
+            except ValueError:
+                min_age_date = self.birthday.replace(year=self.birthday.year + 18,day=28)
+
+            if min_age_date > today:
+                raise ValidationError({"birthday": "Users must be at least 18 years old to register."})
+
+            # User cannot be older than 110 years.
+            try:
+                max_age_date = today.replace(year=today.year - 110)
+            except ValueError:
+                max_age_date = today.replace(year=today.year - 110,day=28)
+
+            if self.birthday < max_age_date:
+                raise ValidationError({"birthday": "Users cannot be older than 110 years."})
+
+    def __str__(self) -> str:
+        if self.first_name and self.last_name:
+            return f"{self.first_name} {self.last_name}"
+
+        return self.email
